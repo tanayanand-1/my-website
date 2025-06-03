@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tanayanand Private Limited Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="/path/to/isotope.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!--------------------------NAVIGATION BAR----------------------------------------------------------------------->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand-link">
+        <div class="brand">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="plane-icon">
+            <path d="M3 110V10h11v6h2v-3h4l3 3v4h-2a2 2 0 0 1-4 0h-6a2 2 0 0 1-4 0H3v-2zm2-4v4h2a2 2 0 0 1 4 0h6a2 2 0 0 1 4 0h2v-2l-2-2h-5v3H5v-3z"/>
+          </svg>
+          <span class="brand-name">
+            Tanayanand Pvt <span class="highlight-ltd">
+              Ltd
+              <img src="assets/logo.webp" alt="Plane Logo" class="ltd-plane" />
+            </span>
+          </span>
+        </div>
+      </a>
+      
+      <ul class="nav-links desktop-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="techno.html">Products</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+  
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <ul class="nav-links mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="techno.html">Products</a></li>
+      <li><a href="about_us.html">About</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+ 
+<!---------------------------------------------FRONT PAGE IMAGE------------------------------------------------------------------------->
+  <div class="zoom-container">
+    <img src="assets/front.webp" alt="Your Image" />
+    <div class="typed-overlay">
+      <span id="typed-name"></span>
+    </div>
+  </div>
+</div>
+<!-----------------------------------------------ABOUT USz---------------------------------------------------------------->
+<section class="tools-section">
+
+  <!-- Desktop Version (collapsible cards) -->
+  <div class="tools-row desktop-only">
+    <!-- Same cards you already have -->
+    <div class="tools-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <img src="assets/company.webp" alt="Company Icon" />
+        <h3>COMPANY PROFILE</h3>
+        <span class="icon">+</span>
+      </div>
+      <div class="card-body">
+        <p>Tanayanand Pvt. Ltd. is a company specializing in the design, development and manufacturing of electric ground support equipment (GSE) for the aviation industry. With a focus on sustainability, efficiency, and safety, we provide innovative electric equipment to support aircraft operations on the ground. Our products are engineered to meet the growing demand for environmentally friendly and cost effective ground support equipment.</p>
+      </div>
+    </div>
+
+    <!-- OUR VISION -->
+    <div class="tools-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <img src="assets/vision.webp" alt="Vision Icon" />
+        <h3>OUR VISION</h3>
+        <span class="icon">+</span>
+      </div>
+      <div class="card-body">
+        <p>Our vision is to lead the industry into a sustainable and eco-conscious era. We are committed to pioneering innovative electric equipment that redefines the way modern world function. Our goal is to create a world where efficiency, environmental responsibility, and cutting-edge technology coexist harmoniously, setting new standards and inspiring a cleaner, brighter future.</p>
+      </div>
+    </div>
+
+    <!-- OUR MISSION -->
+    <div class="tools-card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <img src="assets/mission.webp" alt="Mission Icon" />
+        <h3>OUR MISSION</h3>
+        <span class="icon">+</span>
+      </div>
+      <div class="card-body">
+        <p>We prioritize safety, operator comfort, and reduced operational costs while ensuring ease of operation and versatility in our equipment. Our unwavering commitment to environmental stewardship drives us to create solutions that are not only efficient but also environmentally friendly. Through innovation, integrity, and dedication, we aim to inspire positive change and lead the way towards a sustainable future for generations to come.</p>
+      </div>
+    </div>
+
+  </div>
+    <!-- Mobile/Tablet Version (select dropdown) -->
+    <div class="mobile-dropdown mobile-only">
+     
+  
+      <div id="mobileContent" class="mobile-content-box">
+        
+  <div class="dropdown">
+
+    <div class="dropdown-item" onclick="toggleDropdown(this)">
+      <img src="assets/company.webp" alt="Web Dev">
+      <div class="dropdown-content">
+        <div class="dropdown-title">Company Profile</div>
+        <div class="description">
+Tanayanand Pvt. Ltd. is a company specializing in the design, development and manufacturing of electric ground support equipment (GSE) for the aviation industry. With a focus on sustainability, efficiency, and safety, we provide innovative electric equipment to support aircraft operations on the ground. Our products are engineered to meet the growing demand for environmentally friendly and cost effective ground support equipment.    </div>
+      </div>
+    </div>
+
+    <div class="dropdown-item" onclick="toggleDropdown(this)">
+      <img src="assets/vision.webp" alt="Design">
+      <div class="dropdown-content">
+        <div class="dropdown-title">Our Vision</div>
+        <div class="description">
+Our vision is to lead the industry into a sustainable and eco-conscious era. We are committed to pioneering innovative electric equipment that redefines the way modern world function. Our goal is to create a world where efficiency, environmental responsibility, and cutting-edge technology coexist harmoniously, setting new standards and inspiring a cleaner, brighter future.      </div>
+    </div>
+    </div>
+  
+    <div class="dropdown-item" onclick="toggleDropdown(this)">
+      <img src="assets/mission.webp" alt="Design">
+      <div class="dropdown-content">
+        <div class="dropdown-title">Our Mission</div>
+        <div class="description">
+    We prioritize safety, operator comfort, and reduced operational costs while ensuring ease of operation and versatility in our equipment. Our unwavering commitment to environmental stewardship drives us to create solutions that are not only efficient but also environmentally friendly. Through innovation, integrity, and dedication, we aim to inspire positive change and lead the way towards a sustainable future for generations to come.      </div>
+    </div>
+
+  </div>
+    </div>
+</section>
+
+<!---VIDEO-------------------------------------------------------------------------------------------->
+<section class="video-thumbnail-slider">
+  <h2 class="vid-sect">WATCH OUR WORK</h2>
+
+    <div class="thumbnail-container">
+      <div class="thumbnail" data-video-id="dtZWKvSFBWA">
+        <img src="https://img.youtube.com/vi/dtZWKvSFBWA/hqdefault.jpg" alt="Video 1">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="n-w_v0Uf9Cg">
+        <img src="https://img.youtube.com/vi/n-w_v0Uf9Cg/hqdefault.jpg" alt="Video 2">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="rBQJxHUv3eQ">
+        <img src="https://img.youtube.com/vi/rBQJxHUv3eQ/hqdefault.jpg" alt="Video 3">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="f9Csct_tcpA">
+        <img src="https://img.youtube.com/vi/f9Csct_tcpA/hqdefault.jpg" alt="Video 4">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="-jjEWfv1IKo">
+        <img src="https://img.youtube.com/vi/-jjEWfv1IKo/hqdefault.jpg" alt="Video 5">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="lXz-_dg8C9s">
+        <img src="https://img.youtube.com/vi/lXz-_dg8C9s/hqdefault.jpg" alt="Video 6">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="Iv_L8sY3-Kg">
+        <img src="https://img.youtube.com/vi/Iv_L8sY3-Kg/hqdefault.jpg" alt="Video 7">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="_p_CiRrlkpw">
+        <img src="https://img.youtube.com/vi/_p_CiRrlkpw/hqdefault.jpg" alt="Video 8">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="thumbnail" data-video-id="Rg4xrlHNIUs">
+        <img src="https://img.youtube.com/vi/Rg4xrlHNIUs/hqdefault.jpg" alt="Video 9">
+        <div class="play-button">
+          <svg viewBox="0 0 68 48" width="68" height="48">
+            <path class="yt-button-bg" d="M66.52,7.35c-.69-2.59-2.72-4.63-5.3-5.32C56.36,0,34,0,34,0S11.64,0,6.78,2c-2.58,.69-4.61,2.73-5.3,5.32C0,12.3,0,24,0,24s0,11.7,1.48,16.65c.69,2.59,2.72,4.63,5.3,5.32C11.64,48,34,48,34,48s22.36,0,27.22-2c2.58-.69,4.61-2.73,5.3-5.32C68,35.7,68,24,68,24s0-11.7-1.48-16.65Z" fill="#f00"></path>
+            <path d="M45,24,27,14V34Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- Add more as needed -->
+    </div>
+  </section>
+  
+  <!-- Modal Popup -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <iframe 
+      id="modalVideo" 
+      frameborder="0" 
+      allowfullscreen 
+      title="Modal Video Player">
+    </iframe>
+        </div>
+  </div>
+  
+  
+    <!-- Add more as needed -->
+  </div>
+</section>
+
+  </div>
+</div>
+
+
+  <footer id="footer" class="footer">
+
+  <div class="footer-content">
+    <div class="footer-section contact">
+      <h3>Contact US</h3>
+      
+      <a href="https://wa.me/919422255582" target="_blank" rel="noopener" class="support-button">
+        <i class="ri-whatsapp-line"></i> Chat on WhatsApp
+      </a>
+      
+    </div>
+
+    
+
+    <div class="footer-section location">
+      <span class="ether-name">Tanayanand Pvt. Ltd.</span>
+      <p>Tanayanand Pvt. Ltd.
+        201, Jaynarayan society, opp. Rajlaxmi Hall, Datta Mandir road, Nashik road<br>Nashik-422101, Maharashtra, India</p>
+      <p>Contact No.: +91 9422255582<p>
+       <p> E-mail ID: tanayanand.pvt.ltd@gmail.com</p>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Social media</h3>
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/tanayanand?trk=public_post_feed-actor-name" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Tanayanand-Private-Limited/61572761527572/?rdid=VMaagPmR3UjmpOla&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1B4Urb9HoV%2F" aria-label="Facebook" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/tanayanand_private_limited/?igsh=MTQzOXo5dTA2MTZ6Yg%3D%3D#" aria-label="Instagram" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCNzW0G32F-tvFDKF5Xi96Vg" aria-label="YouTube" target="_blank" rel="noopener">
+          <i class="fab fa-youtube"></i>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="footer-section map">
+    <h3>Our Location</h3>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.3413375379823!2d73.8329369!3d19.9521424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd950c80eac3f7%3A0xad5b1eb83778d651!2sJaynarayan%20Society!5e0!3m2!1sen!2sin!4v1748687162705!5m2!1sen!2sin" 
+      class="google-map"
+      title="Google Maps location of Datta Mandir Road, Nashik, Maharashtra"
+      allowfullscreen=""
+      loading="lazy"
+      ></iframe>
+    
+    
+    </div>
+  </div>
+  
+
+  <div class="footer-bottom">
+    <div class="slogan">
+      <span>It’s all about connections</span>
+    </div>
+    <div class="legal">
+      <a href="#">Cookie and Privacy Policy</a>
+      <span>|</span>
+      <a href="#">Accessibility</a>
+      <span>|</span>
+      <span>&copy; 2025 Tanayanand pvt. ltd.</span>
+    </div>
+    
+    </div>
+
+</footer>
+
+  
+      <!-- Additional hidden sections here -->
+    </main>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
